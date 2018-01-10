@@ -1,0 +1,10 @@
+{%extends "base.html"%}
+{%block mainbody%}
+<p>继承了base.html</p>
+
+
+{% for key,value in context.items %}
+    {{key}}:{{value}}
+{% endfor %}
+
+{%endblock%}
